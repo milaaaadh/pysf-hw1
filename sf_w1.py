@@ -1,5 +1,5 @@
 from colorama import Back,Style
-a = int(input("please enter your window size: "))
+a = int(input("How many billions do you have?: "))
 grass = input("Do you like to have grass?: ")
 a = a*18
 up = a//6
