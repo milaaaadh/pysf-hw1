@@ -1,5 +1,6 @@
 from colorama import Back,Style
 a = int(input("please enter your window size: "))
+grass = input("Do you like to have grass?: ")
 a = a*18
 up = a//6
 for i in range(0, up):
@@ -19,10 +20,10 @@ for i in range(1,up+1):
 
 
 
+if grass.lower()=='yes':
+    for i in range(0,a//2):
+        print ( Back.LIGHTGREEN_EX , Back.GREEN , Style.RESET_ALL , end='' )
 
-#for i in range(0,a//2):
-#    print(Back.BLUE,Back.GREEN,Style.RESET_ALL,end='')
-
-#print()
-#for i in range(0,a//2):
-#    print(Back.GREEN,Back.LIGHTGREEN_EX,Style.RESET_ALL,end='')
+    print()
+    for i in range(0,a//2):
+        print(Back.GREEN,Back.LIGHTGREEN_EX,Style.RESET_ALL,end='')
